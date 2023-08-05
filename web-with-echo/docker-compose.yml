@@ -10,7 +10,7 @@ services:
     ports:
       - 8989:8989
     command: >
-      sh -c "go mod tidy && go run server.go"
+      sh -c "go build && ./web-with-echo"
 
   db:
     image: postgres:15.3-alpine3.18
