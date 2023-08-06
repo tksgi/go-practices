@@ -9,6 +9,7 @@ func newRouter() *echo.Echo {
 	e := echo.New()
 
 	e.GET("/", handler.Home)
+	e.POST("/signup", handler.SignUp)
 
 	return e
 }
